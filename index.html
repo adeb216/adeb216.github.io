@@ -1,8 +1,24 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Campground Availability Checker</title>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<p>Mama - I made it to the internet!.</p>
+    <form id="campgroundForm">
+        <label for="campground">Campground Name:</label>
+        <input type="text" id="campground" name="campground" required>
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate" required>
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('campgroundForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Collect form data and send it to the backend
+        });
+    </script>
 </body>
 </html>
